@@ -1,6 +1,10 @@
 ---
 check_content_against_apify_style_guide:
   description: |-
+    You will receive content to review and edit according to Apify's style guide.
+
+    INPUT: {content}
+
     Core responsibilities:
 
     Apply the Apify style guide consistently to all content.
@@ -107,8 +111,14 @@ check_content_against_apify_style_guide:
     Edited:"I'd like to set up a 1on1 meeting on August 5, 2024, at 5 pm to discuss the new anti-blocking measures we're implementing."
 
     Explanation: Changed "1:1" to "1on1," corrected date format to "August 5, 2024," changed time format to "5 pm," and fixed the phrasal verb "set up" (two words).
-  expected_output: Edit and rewrite the content to confirm to the Apify style guide
-    in the description
+  expected_output: |-
+    Return the edited content in a structured format:
+    
+    ## Edited Content
+    [The complete edited version of the content that conforms to Apify's style guide]
+    
+    ## Summary of Changes
+    [Brief summary of the key changes made to improve the content]
   async_execution:
   agent: editor_at_apify
 explain_changes_according_to_apify_style_guide:
@@ -184,7 +194,16 @@ explain_changes_according_to_apify_style_guide:
     August 5, 2024, at 5 pm to discuss the new anti-blocking measures we're implementing.\"\n\nExplanation:
     Changed \"1:1\" to \"1on1,\" corrected date format to \"August 5, 2024,\" changed
     time format to \"5 pm,\" and fixed the phrasal verb \"set up\" (two words)."
-  expected_output: Provide a detailed explanation of the changes made and reference
-    the specific sections of the Apify style guide that were addressed.
+  expected_output: |-
+    Provide a detailed analysis in a structured format:
+    
+    ## Changes Analysis
+    [Detailed breakdown of each change made by the editor]
+    
+    ## Style Guide References
+    [Specific sections of the Apify style guide that were applied, with explanations]
+    
+    ## Learning Points
+    [Key takeaways and tips for future content creation]
   async_execution:
   agent: explanation_agent

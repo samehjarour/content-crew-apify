@@ -12,7 +12,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        
+        "content": "Please provide the content you want to review and edit according to Apify's style guide."
     }
     ContentCrewApifyCrew().crew().kickoff(inputs=inputs)
 
@@ -22,7 +22,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        
+        "content": "Sample content for training the crew to review and edit according to Apify's style guide."
     }
     try:
         ContentCrewApifyCrew().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
@@ -45,7 +45,7 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        
+        "content": "Test content for evaluating the crew's ability to review and edit according to Apify's style guide."
     }
     try:
         ContentCrewApifyCrew().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)
