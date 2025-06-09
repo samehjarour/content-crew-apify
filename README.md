@@ -90,3 +90,6 @@ For support, questions, or feedback regarding the ContentCrewApify Crew or crewA
 - [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
+
+---
+*Last updated: June 9, 2025 - Deployment refresh*
