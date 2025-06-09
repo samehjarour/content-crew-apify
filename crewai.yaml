@@ -1,7 +1,7 @@
 # CrewAI Deployment Configuration
 name: content-crew-apify
 description: "Content editing crew that enforces Apify's style guide"
-version: "0.1.0"
+version: "0.2.0"
 
 # Deployment settings
 deployment:

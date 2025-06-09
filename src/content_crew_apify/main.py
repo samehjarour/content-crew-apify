@@ -2,6 +2,7 @@
 import sys
 from content_crew_apify.crew import ContentCrewApifyCrew
 
+# ContentCrewApify v0.2.0 - Enhanced deployment
 # This main file is intended to be a way for your to run your
 # crew locally, so refrain from adding unnecessary logic into this file.
 # Replace with inputs you want to test with, it will automatically
