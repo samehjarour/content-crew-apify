@@ -1,6 +1,7 @@
 import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from .tools.custom_tool import ArtifactGenerator
 
 
 
@@ -14,7 +15,7 @@ class ContentCrewApifyCrew:
     def editor_at_apify(self) -> Agent:
         return Agent(
             config=self.agents_config["editor_at_apify"],
-            tools=[],
+            tools=[ArtifactGenerator()],
         )
     
     @agent

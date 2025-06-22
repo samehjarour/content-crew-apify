@@ -119,6 +119,9 @@ check_content_against_apify_style_guide:
     
     ## Summary of Changes
     [Brief summary of the key changes made to improve the content]
+    
+    ## Artifact
+    Create a downloadable artifact file containing the edited content in markdown format and provide the download link.
   async_execution:
   agent: editor_at_apify
 explain_changes_according_to_apify_style_guide:
